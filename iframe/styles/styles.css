@@ -314,4 +314,10 @@ a{
     font-size: 2vw;
 }
 
+.btn_nav{
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
 

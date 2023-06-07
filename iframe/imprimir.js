@@ -1,6 +1,27 @@
+var c = new Comunicator()
+
+const ticketExample = `    
+BIND Banco Industrial
+
+
+FECHA           HORA        CAJERO       COMP.No
+16/05/2022    11:14:17       444        167-10-10
+OPERACIÓN DE PRESTAMO INMEDIATO
+DE CUENTA NRO.: 3334441
+
+PRESTAMO                 $5000000
+PRESTAMO DISPONIBLE      $95000.00
+
+
+¡GRACIAS POR UTILIZAR EL COBRO EXPRESS!
+
+¿Todavia no probaste la app de BIND  24?
+Bajala a tu celular
+Conocé más en
+b24.bind.com.ar | bind.com.ar`
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("[IFRAME]:IMPRIMIR")
-    var c = new Comunicator()
     c.startComunicate()
     c.setfdkEnabled([4,8])
     c.setFunction(()=>c.startPrint(ticketExample),8)

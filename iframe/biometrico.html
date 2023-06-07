@@ -16,6 +16,28 @@
 			<div id="filter_background">
 			<div id="background">
 				<div id="tittle">Lectura de huella dactilar</div>
+
+				<div id="modal_bio_begin" class="modal_printer">
+					<div id="content_alert">
+						<div id="icon_alert"></div>
+						<div id="text_alert">Ponga su huella en el scanner</div>
+					</div>
+				</div>
+
+				<div id="modal_bio_result" class="modal_printer">
+					<div id="content_alert">
+						<div id="icon_alert"></div>
+						<div id="text_alert">Chequeando Huella</div>
+					</div>
+				</div>
+				
+				<div id="modal_bio_taken" class="modal_printer">
+					<div id="content_alert">
+						<div id="icon_alert"></div>
+						<div id="text_alert">Lectura Finalizada</div>
+					</div>
+				</div>
+
 				<div id="navs">
 					<div id="navLeft">
 						<a href="./iframe.html" class="animaLeft marginA">
@@ -27,12 +49,12 @@
 					</div>
 	
 					<div id="navRight">
-						<a href="./biometrico.html" class="animaRight marginA">
-							<div id="option" class="flexEnd">
+						<button  class="btn_nav animaRight marginA" id="block_element" onclick="start()">
+							<div id="option" class="flexEnd" >
 									<div class="alignRight">Iniciar Lectura</div>
 									<div class="alignRight">Presionar Fdk8 </div>
 							</div>
-						</a>
+						</button>
 						
 					</div>
 			</div>
