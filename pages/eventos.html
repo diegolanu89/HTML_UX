@@ -4,12 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>SUI EVENT</title>
-    
-    <link rel="stylesheet" href="../styles/styles.css" />
-
-    
+    <link rel="stylesheet" href="../styles/stylesEvents.css" />
+    <link rel="icon" href="./images/principal_icon.png">
   </head>
 
   <body>
@@ -20,46 +17,68 @@
     </header>
 
     <main>
+        <nav id="menu_event">
+            <ul>
+             <li><a href="../index.html" class="red_bt">Home</a></li>
+             <li><a href="eventos.html" class="actual_bt">Eventos</a></li>
+         <li><a href="calendario.html">Calendario</a>
+         <ul>
+         <li><a href="calendario.html">Pasados</a></li>
+         <li><a href="calendario.html">Hoy</a></li>
+         <li><a href="calendario.html">Futuros</a></li>
+         </ul>
+         </li>
+         <li><a href="artistas.html">Artistas</a></li>
+         <li><a href="suscripcion.html">Suscribete</a></li>
+         <li><a href="contactos.html">Contactos</a>
+          <ul>
+            <li><a href="contactos.html">Instagram</a></li>
+            <li><a href="contactos.html">Twitter</a></li>
+            <li><a href="contactos.html">Facebook</a></li>
+            </ul>
+        </li>
+            </ul>
+            </nav>
         <div id="conteiner">
-
-            <div id="filter_background">
-                <div id="line">
+                <div id="line_event">
                     
                 </div>
-            <div id="background">
-                <img id="img_central" src="../images/init1.jpeg">
-                <div id="navs">
-                    <div id="navLeft">
-                        <a href="./imprimir.html" class="animaLeft marginA">
-                            <div id="option" class="flexStart">
-                                <div>Imprimir Ticket de prueba</div>
-                                <div>Presionar Fdk3 </div>
-                            </div>
-                        </a>
-                        <button class="btn_nav animaLeft marginA" onclick="c.exitMicrositio()">
-                            <div id="option" class="flexStart">
-                                <div>Abandonar Micrositio</div>
-                                <div>Presionar Fdk4 </div>
-                            </div>
-                        </button>
-                    </div>
-    
-                    <div id="navRight">
-                        <a href="./biometrico.html" class="animaRight marginA">
-                            <div id="option" class="flexEnd">
-                                    <div class="alignRight">Leer Huella</div>
-                                    <div class="alignRight">Presionar Fdk7 </div>
-                            </div>
-                        </a>
-                        <button class="btn_nav animaRight marginA" onclick="c.salirATM()">
-                            <div id="option" class="flexEnd ">
-                                <div>Salir del cajero</div>
-                                <div>Presionar Fdk8 </div>
-                            </div>
-                        </button>
-                    </div>
-            </div>
-            </div>
+                <div id="background_event" class="back_1">
+                    <div>
+                    <div id="navs">
+                        <div id="navLeft">
+                            <a href="./imprimir.html" class=" marginA">
+                                <div id="option_event" class="flexStart option_img_1">
+                                    
+                                    <div>Próximos</div>
+                                    <div>Los eventos más inmediatos al día de la fecha.</div>
+                                </div>
+                            </a>
+                            <a href="./imprimir.html" class=" marginA">
+                                <div id="option_event" class="flexStart option_img_2">
+                                    <div>Este fin de semana</div>
+                                    <div>Visualiza los eventos de este próximo fin se semana.</div>
+                                </div>
+                            </a>
+                            
+                        </div>
+        
+                        <div id="navRight">
+                            <a href="./imprimir.html" class=" marginA">
+                                <div id="option_event" class="flexEnd option_img_3">
+                                    <div>Eventos Anuales</div>
+                                    <div>Visualiza los eventos que sacudiran la platea este año en tu país.</div>
+                                </div>
+                            </a>
+                            <a href="./imprimir.html" class=" marginA">
+                                <div id="option_event" class="flexEnd option_img_4">
+                                    <div>Posibles Eventos Emergentes</div>
+                                    <div>Visualiza las noticias de posibles recitales o eventos artísticos de la región.</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
         </div>
     </div>
     </main>

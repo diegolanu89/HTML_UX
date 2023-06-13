@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SUI EVENT</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/stylesEvents.css" />
     <link rel="icon" href="./images/principal_icon.png">
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <link rel="icon" href="./images/principal_icon.png">
   </head>
 
   <body>
@@ -21,39 +19,75 @@
     </header>
 
     <main>
-        <div id="conteiner">
-            <div id="filter_background">
-                <div id="line">
-                  <nav id="menu">
-                    <ul>
-                     <li><a href="#">Eventos</a></li>
-                     <li><a href="#">Calendario</a>
-                     <ul>
-                     <li><a href="#">Pasados</a></li>
-                     <li><a href="#">Hoy</a></li>
-                     <li><a href="#">Futuros</a></li>
-                     </ul>
-                     </li>
-                     <li><a href="#">Artistas</a></li>
-                     <li><a href="#">Suscribete</a></li>
-                     <li><a href="#">Contactos</a>
-                      <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                    </nav>
-
-                </div>
-                 <div id="background">
-                  <img id="img_central" src="images/init1.jpeg">
-                  
-
-                 </div>
-            </div>
+      <nav id="menu_event">
+        <ul>
+         <li><a href="../index.html" class="red_bt">Home</a></li>
+         <li><a href="eventos.html" >Eventos</a></li>
+     <li><a href="calendario.html">Calendario</a>
+     <ul>
+     <li><a href="calendario.html">Pasados</a></li>
+     <li><a href="calendario.html">Hoy</a></li>
+     <li><a href="calendario.html">Futuros</a></li>
+     </ul>
+     </li>
+     <li><a href="artistas.html" class="actual_bt">Artistas</a></li>
+     <li><a href="suscripcion.html">Suscribete</a></li>
+     <li><a href="contactos.html">Contactos</a>
+      <ul>
+        <li><a href="contactos.html">Instagram</a></li>
+        <li><a href="contactos.html">Twitter</a></li>
+        <li><a href="contactos.html">Facebook</a></li>
+        </ul>
+    </li>
+        </ul>
+        </nav>
+      <div id="conteiner">
+        <div id="line_event">
+            
         </div>
+        <div id="background_event" class="back_4">
+            <div>
+              <div id="navs_center">
+
+                <a href="javascript:setTimeout(()=>{window. location = './pages/eventos.html' },750);" class="animaleft_nav">
+                  <div id="filter_option" class="art_1">
+                    <div id="option_center" >
+                        <div>Locales</div>
+                        <div><p>
+                          Artistas de tu propia Región.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="javascript:setTimeout(()=>{window. location = './pages/suscripcion.html' },750);" class="animacenter_nav" >
+                  <div id="filter_option" class="art_2">
+                    <div id="option_center">
+                        <div>Internacionales</div>
+                        <div>
+                          <p>Aquellos artistas de la escena internacional.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="javascript:setTimeout(()=>{window. location = './pages/artistas.html' },750);" class="animaright_nav">
+                  <div id="filter_option" class="art_3">
+                  <div id="option_center">
+                      <div>Emergentes</div>
+                      <div>
+                        <p>Los artistas que comienzan a dominar la escena.</p>
+                      </div>
+                  </div>
+                </div>
+                </a>
+
+          </div>
+            </div> 
+        </div>
+</div>
+</div>
     </main>
 
     <footer>

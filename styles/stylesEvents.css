@@ -64,11 +64,11 @@ body:focus {
 
 main{
     outline: none;
-    height:85%
+    height:auto;
 }
 
 footer{
-    height: auto;
+    min-height: 500px;
     /* border: 1px solid #ffffff7d; */
     text-align: center;
     background: black;
@@ -109,7 +109,7 @@ html, body, iframe
 {
  margin: 0px; 
  padding: 0px; 
- height: 100%; 
+ height: auto; 
  border: none;
 }
 
@@ -203,7 +203,7 @@ a{
     animation: opacity 4s 1 forwards;
 }
 
-#line{
+#line_event{
     width: 100%;
     text-align: center;
     height: 9%;
@@ -212,12 +212,12 @@ a{
     font-size: 35px;
     text-shadow: 1px 1px white;
     border-top: 10px solid #ff00006b;
-    animation: slide_line 1s 1 forwards;
+    animation: opacity 1s 1 forwards;
     background: black;
     box-shadow: 0px 0px 110px 80px black;
 }
 
-#background{
+#background_event{
     top: 0px;
     left: 0px;
     width:100%;
@@ -227,8 +227,56 @@ a{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: space-around;
-    /*backdrop-filter: hue-rotate(180deg);
-    backdrop-filter: invert(1);*/
+    
+    min-height: 700px;
+}
+
+.back_1{
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: invert(1);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init1.jpeg);
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_2{
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: invert(1);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init2.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_3{
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: invert(1);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init3.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_4{
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: invert(1);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init4.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #filter_background{
@@ -251,10 +299,10 @@ a{
     width: 100%;
     display: flex;
     height: auto;
+    min-height: 800px;
     justify-content: space-between;
     flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 4%;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -272,6 +320,7 @@ a{
     width: 30%;
     max-width: 400px;
     margin:1%;
+    min-height: 700px;
 }
 
 .marginA{
@@ -288,6 +337,7 @@ a{
     width: 35%;
     float: left;
     margin-left: 10px;
+    padding: 20px;
 }
 
 #navRight{
@@ -368,6 +418,8 @@ a{
     border-radius: 10px 10px 5px 50px;
     background: white;
     text-align: right;   
+    animation: opacity 4s 1 forwards;
+    animation: slide_right 1s 1 forwards;
 }
 
 .flexStart{
@@ -375,6 +427,8 @@ a{
     border-radius: 10px 10px 50px 5px;
     background: white;
     text-align: left;
+    animation: opacity 4s 1 forwards;
+    animation: slide_left 1s 1 forwards;
 }
 
 #icon{
@@ -477,16 +531,40 @@ a{
        background-repeat: no-repeat;
 }
 
+.art_1{
+    background-color: white;
+       background-image: url(../images/art_1.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+}
+
+.art_2{
+    background-color: white;
+       background-image: url(../images/art_2.webp);
+       background-size: cover;
+       background-position: -200px;
+       background-repeat: no-repeat;
+}
+
+.art_3{
+    background-color: white;
+       background-image: url(../images/art_3.jpeg);
+       background-size: cover;
+       background-repeat: no-repeat;
+}
+
 
 .grad {
-    pointer-events: none;   
-    min-height:60px;      
+    pointer-events: none;   /* isto faz com que o clique "passe" adiante */  
+    min-height:60px;       /* Aqui voce define o tamanho do degrade */
     width:100%;
     position:absolute;
     bottom:0;
+                        /* Para branco, use 255,255,255,0 e 255,255,255,1 */
     background: -moz-linear-gradient(top, rgba(255,0,0,0) 0%, rgba(255,0,0,1) 100%);
     background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 100%);
     background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,1) 100%);
+                        /* Para branco, use #00ffffff e #ffffff abaixo */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff0000', endColorstr='#ff0000',GradientType=0 );
   }
 
@@ -568,7 +646,7 @@ a{
     opacity: 0.3;
     background-repeat: no-repeat;
     width: 100%;
-    height: 85%;
+    height: -webkit-fill-available;
     object-fit: cover;
     object-position: 20px 10px;
     filter: grayscale(1) blur(5px);
@@ -588,21 +666,26 @@ a{
   }
   }
 
-#menu ul {
+  #menu_event{
+    width:100%;
+    position: absolute;
+  }
+
+#menu_event ul {
     list-style:none;
     margin:0;
     padding:0;
    }
    
-   /* items del menu */
+   /* items del menu_event */
    
-   #menu ul li {
+   #menu_event ul li {
     background-color:none;
    }
    
-   /* enlaces del menu */
+   /* enlaces del menu_event */
    
-   #menu ul a {
+   #menu_event ul a {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -615,12 +698,12 @@ a{
     text-align: left;
     margin-left: 10px;
     text-shadow: none;
-    animation: nav_appear 1s 1 forwards;
+    animation: opacity 1s 1 forwards;
    }
    
  
    
-   #menu ul li {
+   #menu_event ul li {
     position:relative;
     float:left;
     margin:0;
@@ -628,12 +711,12 @@ a{
     z-index:2000;
    }
    
-   #menu ul li:hover {
+   #menu_event ul li:hover {
     transition: 0.2s;
     transform:scale(1.15);
    }
 
-#menu ul ul {
+#menu_event ul ul {
     display:none;
     position:absolute;
     top:100%;
@@ -642,28 +725,36 @@ a{
     padding:0;
     z-index:2000;
     animation: opacity 1s 1 forwards;
+    background-image: linear-gradient( to bottom, rgb(255 255 255 / 15%), rgb(0 0 0 / 0%) );
+    font-size: 1vw;
+    width:100%;
+    transition: 0.2s;
+    backdrop-filter: blur(10px);
+    text-shadow: 1px 1px black;
    }
    
-   #menu ul ul li {
+   #menu_event ul ul li {
     float:none;
-    width:150px
+    width:150px;
+    text-shadow: 1px 1px black;
    }
   
    
-   #menu ul ul a {
+   #menu_event ul ul a {
     line-height:120%;
     padding:10px 15px;
     color: #c8c4c4;
     text-shadow: none;
     text-transform: none;
+    text-shadow: 1px 1px black;
    }
    
-   #menu ul li:hover > ul {
+   #menu_event ul li:hover > ul {
     display:block;
     z-index:2000;
    }
 
-   #menu ul a.red_bt{
+   #menu_event ul a.red_bt{
     color:rgb(255, 145, 0);
     background-image: linear-gradient(to bottom, red, red,blue);
     background-clip: text;
@@ -673,7 +764,7 @@ a{
     filter:opacity(0.9)
    }
 
-   #menu ul a.actual_bt{
+   #menu_event ul a.actual_bt{
     color:rgb(255, 145, 0);
     background-image: linear-gradient(to bottom, blue, red);
     background-clip: text;
@@ -683,4 +774,215 @@ a{
     filter:opacity(0.9)
    }
 
+
+/***********************************************************/
+   #option_event{
+    box-shadow: 0px 0px 10px 0px #0000009c;
+}
+
+#option_event:hover{
+    transition:all 0.5s ease-in-out;
+    transform:scale(1.05);
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 20px 5px #ffffff6e;
+    opacity: 1;
+    filter:brightness(150%);
+
+  }
+
+.option_img_1{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init1.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.option_img_2{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init2.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.option_img_3{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init3.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.option_img_4{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/init4.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.instagram{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/instagram.webp);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.face{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/face.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.twitter{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  ), url(../images/twitter.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+#option_event>div:first-of-type{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.568),
+    rgba(0, 0, 0, 0.719)
+  );
+    height: 30px;
+    padding: 10px;
+    color:white;
+    font-size: 1.1vw;
+}
+
+#option_event>div:nth-child(2n){
+    height: 200px;
+    padding: 10px;
+    color:white;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+}
+
+#img_option{
+    position: relative;
+    top: 0px;
+    z-index: -100;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    object-position: 20px 10px;
+    filter: grayscale(1) blur(5px);
+}
+
+
+
+
+
+
+
+
+
+/*FORM===========================================================*/
+
+form{
+    width: 50%;
+    max-width:750px;
+    background: #342d2d;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px black;
+    margin: 20px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.568),
+    rgba(0, 0, 255, 0.616)
+  );text-shadow: 1px 1px black;
+  animation:slide_left 1s 1 forwards;
+  
+}
+
+form>p,h1,label{
+    font-size: 1vw;
+    font-family: 'DAGGER';text-shadow: 1px 1px black;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 3px solid #8080807a;
+    border-radius: 10px;
+    background: #8080805e;
+    font-family: 'DAGGER';
+    color:white;
+    text-shadow: 1px 1px black;
+    font-size: 1.5vw;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #dddddd88;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;font-size: 1.5vw;
+  text-shadow: 1px 1px black;
+  font-family: 'Dagger';
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  text-align: center;font-size: 1.5vw;
+}
    
