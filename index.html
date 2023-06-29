@@ -5,51 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUI EVENT</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="./images/principal_icon.png">
   </head>
 
   <body>
 
     <header>
-        <h1 id="tittle">SUI EVENT</h1>
-        <div id="icon"></div>
+        <div class="flex">
+          <h1 id="tittle">SUI EVENT</h1>
+          <div id="icon" role="img" aria-label="Icono"></div>
+        </div>
+        <div id="line"></div>
+        <div>
+          <nav id="menu">
+            <ul>
+              <li><a class="delay-me1" href="./pages/eventos.html">Eventos</a></li>
+              <li><a class="delay-me2" href="./pages/calendario.html">Calendario</a>
+                <ul>
+                  <li><a href="./pages/calendario.html">Pasados</a></li>
+                  <li><a href="./pages/calendario.html">Hoy</a></li>
+                  <li><a href="./pages/calendario.html">Futuros</a></li>
+                </ul>
+              </li>
+              <li><a class="delay-me3" href="./pages/artistas.html">Artistas</a></li>
+              <li><a class="delay-me4" href="./pages/suscripcion.html">Suscribete</a></li>
+              <li><a class="delay-me5" href="./pages/contactos.html">Contactos</a>
+                <ul>
+                  <li><a href="./pages/contactos.html">Instagram</a></li>
+                  <li><a href="./pages/contactos.html">Twitter</a></li>
+                  <li><a href="./pages/contactos.html">Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav></div>
     </header>
 
-    <main>
-        <div id="conteiner">
-            <div id="filter_background">
-                <div id="line">
-                  <nav id="menu">
-                    <ul>
-                     <li><a href="./pages/eventos.html">Eventos</a></li>
-                     <li><a href="./pages/calendario.html">Calendario</a>
-                     <ul>
-                     <li><a href="./pages/calendario.html">Pasados</a></li>
-                     <li><a href="./pages/calendario.html">Hoy</a></li>
-                     <li><a href="./pages/calendario.html">Futuros</a></li>
-                     </ul>
-                     </li>
-                     <li><a href="./pages/artistas.html">Artistas</a></li>
-                     <li><a href="./pages/suscripcion.html">Suscribete</a></li>
-                     <li><a href="./pages/contactos.html">Contactos</a>
-                      <ul>
-                        <li><a href="./pages/contactos.html">Instagram</a></li>
-                        <li><a href="./pages/contactos.html">Twitter</a></li>
-                        <li><a href="./pages/contactos.html">Facebook</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                    </nav>
-
-                </div>
-                 <div id="background">
-                  <img id="img_central" src="images/init1.jpeg">
+  <main>
+    <div id="conteiner">
+              <div id="background">
+                  <img id="img_central" src="images/init1.jpeg" alt="Imagen Central">
                   <div id="navs_center">
-
                         <a href="javascript:setTimeout(()=>{window. location = './pages/eventos.html' },750);" class="animaleft_nav">
-                          <div id="filter_option" class="img_init1">
-                            <div id="option_center" >
+                          <div id="filter_option" class="img_init1" role="img" aria-label="Imagen Opción">
+                            <div id="option_center">
                                 <div>Eventos</div>
                                 <div><p>
                                   No te pierdas los últimos eventos de tu ciudad
@@ -58,9 +57,8 @@
                             </div>
                           </div>
                         </a>
-
                         <a href="javascript:setTimeout(()=>{window. location = './pages/suscripcion.html' },750);" class="animacenter_nav" >
-                          <div id="filter_option" class="img_init2">
+                          <div id="filter_option" class="img_init2" role="img" aria-label="Imagen Opción">
                             <div id="option_center">
                                 <div>Suscríbete</div>
                                 <div>
@@ -68,10 +66,8 @@
                                 </div>
                             </div>
                           </div>
-                        </a>
-
                         <a href="javascript:setTimeout(()=>{window. location = './pages/artistas.html' },750);" class="animaright_nav">
-                          <div id="filter_option" class="img_init3">
+                          <div id="filter_option" class="img_init3" role="img" aria-label="Imagen Opción">
                           <div id="option_center">
                               <div>Artistas</div>
                               <div>
@@ -80,12 +76,9 @@
                           </div>
                         </div>
                         </a>
-
                   </div>
-
-                 </div>
-            </div>
-        </div>
+              </div>
+      </div>
     </main>
 
     <footer>

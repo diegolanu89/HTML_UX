@@ -1,94 +1,124 @@
 <!DOCTYPE html>
-<html Lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>SUI EVENT</title>
     <link rel="stylesheet" href="../styles/stylesEvents.css" />
-    <link rel="icon" href="./images/principal_icon.png">
-    <link rel="icon" href="./images/principal_icon.png">
+    <link rel="icon" href="./images/principal_icon.png" />
+    <link rel="icon" href="./images/principal_icon.png" />
   </head>
 
   <body>
-
     <header>
+      <div class="flex">
         <h1 id="tittle">Calendario</h1>
         <div id="icon"></div>
+      </div>
+      <div id="line_event"></div>
+      <nav id="menu">
+        <ul>
+          <li><a class="delay-me1 red_bt" href="../index.html">Home</a></li>
+          <li><a class="delay-me2" href="eventos.html">Eventos</a></li>
+          <li>
+            <a class="delay-me3 actual_bt" href="calendario.html">Calendario</a>
+            <ul>
+              <li><a href="calendario.html">Pasados</a></li>
+              <li><a href="calendario.html">Hoy</a></li>
+              <li><a href="calendario.html">Futuros</a></li>
+            </ul>
+          </li>
+          <li><a class="delay-me4" href="artistas.html">Artistas</a></li>
+          <li><a class="delay-me5" href="suscripcion.html">Suscribete</a></li>
+          <li>
+            <a class="delay-me6" href="contactos.html">Contactos</a>
+            <ul>
+              <li><a href="contactos.html">Instagram</a></li>
+              <li><a href="contactos.html">Twitter</a></li>
+              <li><a href="contactos.html">Facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <nav id="menu_event">
-        <ul>
-         <li><a href="../index.html" class="red_bt">Home</a></li>
-         <li><a href="eventos.html">Eventos</a></li>
-     <li><a href="calendario.html" class="actual_bt">Calendario</a>
-     <ul>
-     <li><a href="calendario.html">Pasados</a></li>
-     <li><a href="calendario.html">Hoy</a></li>
-     <li><a href="calendario.html">Futuros</a></li>
-     </ul>
-     </li>
-     <li><a href="artistas.html">Artistas</a></li>
-     <li><a href="suscripcion.html">Suscribete</a></li>
-     <li><a href="contactos.html">Contactos</a>
-      <ul>
-        <li><a href="contactos.html">Instagram</a></li>
-        <li><a href="contactos.html">Twitter</a></li>
-        <li><a href="contactos.html">Facebook</a></li>
-        </ul>
-    </li>
-        </ul>
-        </nav>
       <div id="conteiner">
-        <div id="line_event">
-            
-        </div>
-        <div id="background_event" class="back_4">
-            <div>
+        <div
+          id="background_event"
+          class="back_4"
+          role="img"
+          aria-label="Imagen Background"
+        >
+          <div>
             <div id="navs">
-                <div id="navLeft">
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexStart option_img_1">
-                            
-                            <div>Próximos</div>
-                            <div>Los eventos más inmediatos al día de la fecha.</div>
-                        </div>
-                    </a>
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexStart option_img_2">
-                            <div>Este fin de semana</div>
-                            <div>Visualiza los eventos de este próximo fin se semana.</div>
-                        </div>
-                    </a>
-                    
-                </div>
+              <div id="navLeft">
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexStart option_img_1"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div>Próximos</div>
+                    <div>Los eventos más inmediatos al día de la fecha.</div>
+                  </div>
+                </a>
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexStart option_img_2"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div>Este fin de semana</div>
+                    <div>
+                      Visualiza los eventos de este próximo fin se semana.
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-                <div id="navRight">
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexEnd option_img_3">
-                            <div>Eventos Anuales</div>
-                            <div>Visualiza los eventos que sacudiran la platea este año en tu país.</div>
-                        </div>
-                    </a>
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexEnd option_img_4">
-                            <div>Posibles Eventos Emergentes</div>
-                            <div>Visualiza las noticias de posibles recitales o eventos artísticos de la región.</div>
-                        </div>
-                    </a>
-                </div>
-            </div> 
+              <div id="navRight">
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexEnd option_img_3"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div>Eventos Anuales</div>
+                    <div>
+                      Visualiza los eventos que sacudiran la platea este año en
+                      tu país.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexEnd option_img_4"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div>Posibles Eventos Emergentes</div>
+                    <div>
+                      Visualiza las noticias de posibles recitales o eventos
+                      artísticos de la región.
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-</div>
-</div>
+      </div>
     </main>
 
     <footer>
       <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
     </footer>
-
   </body>
-  
 </html>

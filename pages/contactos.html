@@ -1,88 +1,104 @@
 <!DOCTYPE html>
-<html Lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>SUI EVENT</title>
     <link rel="stylesheet" href="../styles/stylesEvents.css" />
-    <link rel="icon" href="./images/principal_icon.png">
-    <link rel="icon" href="./images/principal_icon.png">
+    <link rel="icon" href="./images/principal_icon.png" />
+    <link rel="icon" href="./images/principal_icon.png" />
   </head>
 
   <body>
-
     <header>
+      <div class="flex">
         <h1 id="tittle">Contactos</h1>
         <div id="icon"></div>
+      </div>
+      <div id="line_event"></div>
+      <nav id="menu">
+        <ul>
+          <li><a class="delay-me1 red_bt" href="../index.html">Home</a></li>
+          <li><a class="delay-me2" href="eventos.html">Eventos</a></li>
+          <li>
+            <a class="delay-me3" href="calendario.html">Calendario</a>
+            <ul>
+              <li><a href="calendario.html">Pasados</a></li>
+              <li><a href="calendario.html">Hoy</a></li>
+              <li><a href="calendario.html">Futuros</a></li>
+            </ul>
+          </li>
+          <li><a class="delay-me4" href="artistas.html">Artistas</a></li>
+          <li><a class="delay-me5" href="suscripcion.html">Suscribete</a></li>
+          <li>
+            <a class="delay-me6 actual_bt" href="contactos.html">Contactos</a>
+            <ul>
+              <li><a href="contactos.html">Instagram</a></li>
+              <li><a href="contactos.html">Twitter</a></li>
+              <li><a href="contactos.html">Facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <nav id="menu_event">
-        <ul>
-         <li><a href="../index.html" class="red_bt">Home</a></li>
-         <li><a href="eventos.html">Eventos</a></li>
-     <li><a href="calendario.html">Calendario</a>
-     <ul>
-     <li><a href="calendario.html">Pasados</a></li>
-     <li><a href="calendario.html">Hoy</a></li>
-     <li><a href="calendario.html">Futuros</a></li>
-     </ul>
-     </li>
-     <li><a href="artistas.html">Artistas</a></li>
-     <li><a href="suscripcion.html">Suscribete</a></li>
-     <li><a href="contactos.html" class="actual_bt">Contactos</a>
-      <ul>
-        <li><a href="contactos.html">Instagram</a></li>
-        <li><a href="contactos.html">Twitter</a></li>
-        <li><a href="contactos.html">Facebook</a></li>
-        </ul>
-    </li>
-        </ul>
-        </nav>
       <div id="conteiner">
-        <div id="line_event">
-            
-        </div>
-        <div id="background_event" class="back_2">
-            <div>
+        <div
+          id="background_event"
+          class="back_2"
+          role="img"
+          aria-label="Imagen Background"
+        >
+          <div>
             <div id="navs">
-                <div id="navLeft">
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexStart instagram">
-                            
-                            <div>Instagram</div>
-                            <div></div>
-                        </div>
-                    </a>
-                    <a href="#" class=" marginA">
-                        <div id="option_event" class="flexStart twitter">
-                            <div>Twitter</div>
-                            <div></div>
-                        </div>
-                    </a>
-                    <a href="#" class=" marginA">
-                      <div id="option_event" class="flexStart face">
-                          <div>Facebook</div>
-                          <div></div>
-                      </div>
-                  </a>
-                </div>
+              <div id="navLeft">
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexStart instagram"
+                    role="img"
+                    aria-label="facebook"
+                  >
+                    <div>Instagram</div>
+                    <div></div>
+                  </div>
+                </a>
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexStart twitter"
+                    role="img"
+                    aria-label="Twitter"
+                  >
+                    <div>Twitter</div>
+                    <div></div>
+                  </div>
+                </a>
+                <a href="#" class="marginA">
+                  <div
+                    id="option_event"
+                    class="flexStart face"
+                    role="img"
+                    aria-label="Instagram"
+                  >
+                    <div>Facebook</div>
+                    <div></div>
+                  </div>
+                </a>
+              </div>
 
-                <div id="navRight">
-                    
-                </div>
-            </div> 
+              <div id="navRight"></div>
+            </div>
+          </div>
         </div>
-</div>
-</div>
+      </div>
     </main>
 
     <footer>
       <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
     </footer>
-
   </body>
-  
 </html>
