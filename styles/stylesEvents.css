@@ -1029,11 +1029,11 @@ a {
   align-items: stretch;
   backdrop-filter: sepia(1) blur(1px);
   background: linear-gradient(black, blue);
-  opacity: 0.5;
+  opacity: 0.7;
   text-align: left;
   padding: 10px;
   text-shadow: 1px 1px black;
-  font-size: 3vw;
+  font-size: 6vmin;
   color: white;
 }
 
@@ -1050,7 +1050,7 @@ a {
 }
 
 .b-img4 {
-  background-image: url(../images/init.png);
+  background-image: url(../images/images.jfif);
 }
 
 .b-img5 {
