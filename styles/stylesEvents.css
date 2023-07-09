@@ -200,7 +200,7 @@ a {
 
 #tittle {
   width: 50%;
-  font-size: 3vw;
+  font-size: 4vh;
   /*text-shadow: 1px 1px white;*/
   text-align: left;
   margin-top: 30px;
@@ -842,7 +842,7 @@ a {
   height: 40px;
   padding: 10px;
   color: white;
-  font-size: 1.1vw;
+  font-size: 5vh;
 }
 
 #option_event>div:nth-child(2n) {
@@ -1067,4 +1067,12 @@ a {
 
 .b-img8 {
   background-image: url(../images/init4.jpg);
+}
+
+.m_space {
+  margin-bottom: 15px;
+}
+
+.font_bt {
+  font-size: 5vh;
 }
