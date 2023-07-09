@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SUI EVENT</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/stylesEvents.css" />
+    <link rel="icon" href="./images/principal_icon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="flex">
+        <h1 id="tittle">Menu</h1>
+        <div id="icon"></div>
+      </div>
+      <div id="line_event"></div>
+      <nav id="menu">
+        <ul>
+          <li><a class="delay-me1 red_bt" href="../index.html">Home</a></li>
+          <li><a class="delay-me2 actual_bt" href="menu.html">Menu</a></li>
+          <li><a class="delay-me2" href="eventos.html">Eventos</a></li>
+          <li>
+            <a class="delay-me3" href="calendario.html">Calendario</a>
+            <ul>
+              <li><a href="calendario.html">Pasados</a></li>
+              <li><a href="calendario.html">Hoy</a></li>
+              <li><a href="calendario.html">Futuros</a></li>
+            </ul>
+          </li>
+          <li><a class="delay-me4" href="artistas.html">Artistas</a></li>
+          <li><a class="delay-me5" href="suscripcion.html">Suscribete</a></li>
+          <li>
+            <a class="delay-me6 actual_bt" href="contactos.html">Contactos</a>
+            <ul>
+              <li><a href="contactos.html">Instagram</a></li>
+              <li><a href="contactos.html">Twitter</a></li>
+              <li><a href="contactos.html">Facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="conteiner">
+        <div
+          id="background_event"
+          class="back_2"
+          role="img"
+          aria-label="Imagen Background"
+        >
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-8">
+                <button type="button" class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img1"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Grupos</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="d-grid gap-2 col mx-auto">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img2"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Contactos</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img3"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Suscripciones</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img4"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Mis Eventos</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img5"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Esta semana</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img6"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Noticias</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img7"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Historial</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="my_btn btn btn-outline-light">
+                  <div
+                    id="filter_option"
+                    class="my-btn-img b-img8"
+                    role="img"
+                    aria-label="Imagen Opción"
+                  >
+                    <div id="my_btn_opt">
+                      <div>Mis datos</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+  </body>
+</html>
