@@ -28,6 +28,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/stylesEvents.css" />
     <link rel="stylesheet" href="../styles/menuToggle.css" />
     <link rel="icon" href="./images/principal_icon.png" />
@@ -37,7 +41,9 @@
     <header>
       <div class="flex">
         <div id="menu_responsive">
-          <label for="toggle" class="mlabel"></label>
+          <label for="toggle" class="mlabel">
+            <span class="material-icons"> menu </span>
+          </label>
           <input type="checkbox" id="toggle" class="visually-hidden" />
           <div class="control-menu">
             <div>
@@ -70,13 +76,18 @@
                 ><p id="link_m">Suscribete</p></a
               >
             </div>
+            <div>
+              <a class="delay-me6" href="./contactos.html"
+                ><p id="link_m">Contactos</p></a
+              >
+            </div>
           </div>
         </div>
         <h1 id="tittle">Menu</h1>
         <div id="icon"></div>
       </div>
       <div id="line_event"></div>
-      <nav id="menu" class="prueba">
+      <nav id="menu" class="menu_inline">
         <ul>
           <li><a class="delay-me1 red_bt" href="../index.html">Home</a></li>
           <li><a class="delay-me2 actual_bt" href="menu.html">Menu</a></li>

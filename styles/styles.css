@@ -326,11 +326,12 @@ a {
   border-left: 150px solid #38459957;
   background: linear-gradient(red, blue);
   opacity: 0.5;
+  height: 600px;
 }
 
 #option_center>div:first-of-type {
   background: black;
-  font-size: 1.5vw;
+  font-size: 25px;
   color: white;
   height: auto;
   text-indent: 20px;
@@ -342,10 +343,15 @@ a {
 #option_center>div:nth-child(2n) {
   color: white;
   padding: 10px;
-  font-size: 1.5vw;
+  font-size: 25px;
   display: flex;
   align-items: flex-end;
 
+}
+
+#option_center>div>p {
+  text-align: right;
+  font-size: 20px;
 }
 
 .alignRight {
@@ -547,6 +553,7 @@ a {
 }
 
 .animaleft_nav {
+
   animation: slide_left_nav 1s 1 forwards;
 }
 
@@ -720,3 +727,49 @@ a {
   animation: nav_appear 2s 1 forwards;
   animation-delay: 0.5s;
 }
+
+/*____________________RESPONSIVE MENU_____________________________*/
+@media(max-width:550px) {
+  #option_center {
+    height: 300px;
+    margin-bottom: 15px;
+  }
+
+  #atl {
+    position: inherit;
+  }
+
+  #atr {
+    position: inherit;
+  }
+
+  #attm {
+    position: inherit;
+  }
+}
+
+@media(min-width:551px) {
+  #option_center {
+    height: 600px;
+  }
+
+  #atl {
+    position: absolute;
+    z-index: 10000000;
+    left: 0px;
+  }
+
+  #atr {
+    position: absolute;
+    z-index: 10000000;
+    right: 0px;
+  }
+
+  #attm {
+    position: absolute;
+    z-index: 10000000;
+
+  }
+}
+
+/*________________________________________________________________*/

@@ -27,21 +27,69 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/stylesEvents.css" />
     <link rel="icon" href="./images/principal_icon.png" />
+    <link rel="stylesheet" href="../styles/menuToggle.css" />
   </head>
 
   <body>
     <header>
       <div class="flex">
-        <div id="menu_responsive"></div>
+        <div id="menu_responsive">
+          <label for="toggle" class="mlabel">
+            <span class="material-icons"> menu </span>
+          </label>
+          <input type="checkbox" id="toggle" class="visually-hidden" />
+          <div class="control-menu">
+            <div>
+              <a class="delay-me1 red_bt" href="../index.html"
+                ><p id="link_m">Home</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me2 actual_bt" href="./menu.html"
+                ><p id="link_m">Menu</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me3" href="./eventos.html"
+                ><p id="link_m">Eventos</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me4 red_bt" href="./calendario.html"
+                ><p id="link_m">Calendario</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me5 actual_bt" href="./artistas.html"
+                ><p id="link_m">Artistas</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me6" href="./suscripcion.html"
+                ><p id="link_m">Suscribete</p></a
+              >
+            </div>
+            <div>
+              <a class="delay-me6" href="./contactos.html"
+                ><p id="link_m">Contactos</p></a
+              >
+            </div>
+          </div>
+        </div>
         <h1 id="tittle">Contactos</h1>
         <div id="icon"></div>
       </div>
       <div id="line_event"></div>
-      <nav id="menu">
+      <nav id="menu" class="menu_inline">
         <ul>
           <li><a class="delay-me1 red_bt" href="../index.html">Home</a></li>
+          <li><a class="delay-me1" href="menu.html">Menu</a></li>
           <li><a class="delay-me2" href="eventos.html">Eventos</a></li>
           <li>
             <a class="delay-me3" href="calendario.html">Calendario</a>
