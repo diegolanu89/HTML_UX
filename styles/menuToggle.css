@@ -1,0 +1,99 @@
+.control-menu {
+    font-size: 100px;
+    display: flex;
+    position: absolute;
+    z-index: 5000;
+    top: 100px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 16px 1px grey;
+    animation: slide_left 0.2s 1 forwards;
+    /* height: 60%; */
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: auto;
+}
+
+#toggle:checked~.control-menu {
+
+    display: none;
+}
+
+.mlabel {
+    background: #A5D6A7;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+@keyframes slide_left {
+    0% {
+        opacity: 0;
+        transform: translate(-500px, 0px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px)
+    }
+}
+
+
+.control-menu>div {
+    border-bottom: 3px solid rgb(97 85 85 / 47%);
+}
+
+
+
+#link_m {
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    padding: 20px;
+    text-shadow: none;
+    color: white;
+}
+
+#menu_responsive {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*____________________RESPONSIVE MENU_____________________________*/
+@media(max-width:550px) {
+    .prueba {
+        display: none
+    }
+
+    #menu_responsive {
+        display: flex
+    }
+}
+
+@media(min-width:551px) {
+    .prueba {
+        display: block
+    }
+
+    #menu_responsive {
+        display: none
+    }
+}
+
+/*________________________________________________________________*/

@@ -836,10 +836,8 @@ a {
 }
 
 #option_event>div:first-of-type {
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.568),
-      rgba(0, 0, 0, 0.719));
-  height: 40px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.719));
+  height: 70px;
   padding: 10px;
   color: white;
   font-size: 5vh;
@@ -849,7 +847,7 @@ a {
   height: 200px;
   padding: 10px;
   color: white;
-  font-size: 1.1vw;
+  font-size: 2vh;
   text-transform: uppercase;
 }
 
@@ -1071,6 +1069,10 @@ a {
 
 .m_space {
   margin-bottom: 15px;
+}
+
+.m_space_f {
+  margin-bottom: 55px;
 }
 
 .font_bt {
